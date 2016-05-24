@@ -68,7 +68,7 @@ module Elasticsearch
 
           def document_type name=nil
             @document_type = name if name
-            @document_type || document_types[::Globalize.locale] ||= "#{document_type_base}-#{::Globalize.locale}"
+            @document_type || document_types[::Globalize.locale] ||= "#{document_type_base}"
           end
 
           def document_types
